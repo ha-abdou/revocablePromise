@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "target": "es6",
+    "noImplicitAny": true,
+    "declaration": true,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "outDir": ".",
+    "baseUrl": "."
+  },
+  "include": [
+    "./index.ts",
+    "./index.test.ts"
+  ],
+  "exclude": [
+    "node_modules/*"
+  ]
+}

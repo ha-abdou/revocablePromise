@@ -1,0 +1,43 @@
+{
+  "name": "@mostakchif/revocablepromise",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "build": "npm run tslint && tsc",
+    "watch-ts": "tsc -w",
+    "tslint": "tslint -c tslint.json -p tsconfig.json",
+    "test": "mocha --reporter spec \"./index.test.js\"",
+    "test:watch": "npm test -- --watch",
+    "dev": "tsc && concurrently -k -p \"[{name}]\" -n \"TypeScript,Test\" -c \"yellow.bold,cyan.bold,green.bold\" \"npm run watch-ts\" \"npm run test:watch\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ha-abdou/revocablePromise.git"
+  },
+  "author": "habdel-i",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ha-abdou/revocablePromise/issues"
+  },
+  "homepage": "https://github.com/ha-abdou/revocablePromise#readme",
+  "dependencies": {
+    "@types/mocha": "^5.2.7"
+  },
+  "devDependencies": {
+    "@types/assert": "^1.4.3",
+    "@types/chai": "^4.1.7",
+    "@types/should": "^13.0.0",
+    "assert": "^2.0.0",
+    "chai": "^4.2.0",
+    "concurrently": "^4.1.1",
+    "mocha": "^6.2.0",
+    "nodemon": "^1.19.1",
+    "should": "^13.2.3",
+    "tsc": "^1.20150623.0",
+    "tslint": "^5.18.0",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.5.3"
+  }
+}

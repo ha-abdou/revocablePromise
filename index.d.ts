@@ -1,4 +1,4 @@
-export default class RevocablePromise {
+export declare class RevocablePromise {
     private revoked;
     private errCallBack?;
     private resCallBack?;

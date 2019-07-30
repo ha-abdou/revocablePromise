@@ -65,5 +65,5 @@ class RevocablePromise {
         this.minT = v;
     }
 }
-exports.default = RevocablePromise;
+exports.RevocablePromise = RevocablePromise;
 //# sourceMappingURL=index.js.map

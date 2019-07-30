@@ -1,5 +1,5 @@
 
-export default class RevocablePromise {
+export class RevocablePromise {
     private revoked = false;
     private errCallBack?: (err: any) => void;
     private resCallBack?: (data: any) => void;

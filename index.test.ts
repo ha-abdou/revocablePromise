@@ -1,4 +1,4 @@
-import RevocablePromise from "./index";
+import {RevocablePromise} from "./index";
 import { assert } from 'chai';
 import { expect } from 'chai';
 import { should } from 'chai';
